@@ -12,7 +12,7 @@ void Fast_IO(){
 void solve() {
     long long t, n, s1, s2, s;
     cin >> t;
-
+ 
     while (t--) {
         cin >> n;
         s1 = 0;

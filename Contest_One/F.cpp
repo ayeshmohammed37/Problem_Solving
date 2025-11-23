@@ -15,8 +15,11 @@ void solve() {
 
     cin >> xr >> yr >> xw >> yw;
 
-    dr = sqrt((int)(pow(xr,2) + pow(yr,2)));
-    dw = sqrt((int)(pow(xw,2) + pow(yw,2)));
+    // dr = sqrt((int)(pow(xr,2) + pow(yr,2)));
+    // dw = sqrt((int)(pow(xw,2) + pow(yw,2)));
+    dr = xr*xr + yr*yr;
+    dw = xw*xw + yw*yw;
+
 
     if (dr > dw) {
         cout << "Wil" << endl;

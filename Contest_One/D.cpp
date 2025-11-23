@@ -15,6 +15,7 @@ void solve() {
     cin >> t;
 
     while (t--) {
+        /*
         cin >> a >> b >> c >> d;
         int participants = 0;
 
@@ -26,6 +27,18 @@ void solve() {
             participants++;
         
         cout << participants << endl;
+        */
+
+        cin >> a;
+        int n = 3;
+        int ans = 0;
+        while (n--) {
+            cin >> b;
+            if (b > a) {
+                ans++;
+            }
+        }
+        cout << ans << endl;
     }
 }
 
