@@ -1,0 +1,12 @@
+
+N 
+arr[N]
+
+counter = 0
+res[N]
+for i from 0 to N-1:
+    get arr[i]
+    if arr[i] <= 10
+        res[counter++] = i
+for j from 0 to  counter
+    print "A[res[j]]" =  A[res[j]]
