@@ -13,21 +13,12 @@ void print(int arr[], int size);
 
 void solve() {
     
-    int n,m; cin >> n >> m;
-    int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+    string st; cin >> st;
+    for (int i = 0; i < st.length(); i++) {
+        if (i == 0) st[i] = toupper(st[i]);
+        else st[i] = tolower(st[i]);
     }
-
-    for (int i = 0; i < m; i++) {
-        int freq = 0;
-        for (int j = 0; j < n; j++) {
-            if (arr[i] == arr[j]) freq++;
-        }
-        cout << freq << endl;
-    }
-
+    cout << st << endl;
 }
 
 

@@ -1,0 +1,22 @@
+Arrays Built-in functions:
+    sizeof, swap, sort, reverse, min_element/max_element
+
+frequency Array
+
+Multi-D Array
+
+Strings
+Strings(built-in functions)
+    st.size, st.length,
+    st.find,
+    st.substr, 
+    st.push_back, st.pop_back, 
+    st.insert, 
+    st.replace
+    isupper, islower
+    toupper, tolower
+    getline(cin, st)
+    st.swap(st2)
+    sort(st.begin(), st.end())
+    reverse(st.begin(), st.end())
+Strings frequency Array
