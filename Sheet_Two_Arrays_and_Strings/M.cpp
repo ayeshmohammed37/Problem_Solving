@@ -10,17 +10,26 @@ void Fast_IO(){
 }
 
 void solve() {
-    int n; cin >> n;
-    int arr[n];
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
 
-    for (int i = 0; i < n; cin >> arr[i++]) 
-        ;
-    
-    swap(*min_element(arr, arr+n), *max_element(arr, arr+n));
-    for (int i = 0; i < n; cout << arr[i++] << " ") 
-        ;
-    cout << endl;
-    
+    int freq[26] = {0};
+
+    for (int i = 0; i < n; i++) {
+        char c = tolower(s[i]);
+        freq[c -'a']++;
+    }
+
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] == 0) {
+            cout << "NO" << endl;
+            return;
+        }
+    }
+    cout << "YES" << endl;
+
 }
 
 int main() {
