@@ -9,7 +9,7 @@ void Fast_IO(){
     #endif
 }
 
-void print(int arr[], int size);
+void printArray(int arr[], int size);
 
 void solve() {
     
@@ -30,7 +30,7 @@ int main() {
     return 0;
 } 
 
-void print(int arr[], int size) {
+void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
