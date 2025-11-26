@@ -1,13 +1,2 @@
-6
-3
-ABA
-1
-A
-3
-ORZ
-5
-BAAAA
-4
-BKPT
-10
-CODEFORCES
+10 5
+1 2 3 4 5 3 2 1 5 3
