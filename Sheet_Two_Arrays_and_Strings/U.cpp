@@ -1,7 +1,4 @@
 #include <bits/stdc++.h>
-#include <string>
-#include <iostream>
-
 
 using namespace std;
 
@@ -12,12 +9,13 @@ void Fast_IO(){
     #endif
 }
 
-void printArray(int arr[], int size);
-
 void solve() {
-    
-}
+    long long l, r, n;
+    cin >> l >> r >> n;
 
+    long long ans = r - l + 1 -((r/n) - ((l-1)/n));
+    cout << ans << endl;
+}
 
 int main() {
 
@@ -26,10 +24,3 @@ int main() {
      
     return 0;
 } 
-
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}

@@ -1,7 +1,4 @@
 #include <bits/stdc++.h>
-#include <string>
-#include <iostream>
-
 
 using namespace std;
 
@@ -12,12 +9,23 @@ void Fast_IO(){
     #endif
 }
 
-void printArray(int arr[], int size);
-
 void solve() {
-    
-}
+    int r, c;
 
+    int matrix[5][5];
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cin >> matrix[i][j];
+            if (matrix[i][j] == 1) {
+                r = i+1;
+                c = j+1;
+            }
+        }
+    }
+
+    cout << abs(3-r) + abs(3-c) << endl;
+}
 
 int main() {
 
@@ -26,10 +34,3 @@ int main() {
      
     return 0;
 } 
-
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}

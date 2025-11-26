@@ -1,7 +1,4 @@
 #include <bits/stdc++.h>
-#include <string>
-#include <iostream>
-
 
 using namespace std;
 
@@ -12,12 +9,22 @@ void Fast_IO(){
     #endif
 }
 
-void printArray(int arr[], int size);
-
 void solve() {
+    int n;
+    cin >> n;
     
-}
+    while (n--) {
+        string s;
+        cin >> s;
 
+        if (s.length() > 10) {
+            cout << s[0] << (s.length() - 2) << s[s.length()-1] << endl;
+        }
+        else {
+            cout << s << endl;
+        }
+    }
+}
 
 int main() {
 
@@ -26,10 +33,3 @@ int main() {
      
     return 0;
 } 
-
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}

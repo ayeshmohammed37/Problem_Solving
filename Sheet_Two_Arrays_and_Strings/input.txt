@@ -1,1 +1,8 @@
-cAPS
+1
+6 3
+abb
+zba
+bef
+cdu
+ooo
+zzz
