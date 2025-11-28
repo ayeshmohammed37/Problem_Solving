@@ -1,15 +1,1 @@
-
-n, x;
-
-arr[n]
-greater[n]
-smaller[n]
-less = more = 0
-for i from 0 to n-1:
-    cin >> arr[i]
-    if (arr[i] < x)
-        smaller[less++] = arr[i]
-    else if (arr[i] > x)
-        greater[more++] = arr[i]
-
-print smaller then greater;
+n children
