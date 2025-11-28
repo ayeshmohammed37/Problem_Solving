@@ -1,4 +1,1 @@
-3
-yes yes yes no
-yes yes yes no
-yes yes yes no
+2 1
