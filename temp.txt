@@ -1,1 +1,23 @@
 n children
+let i from 1 to n
+    child gets ai candies
+        give m candies to the first child of the line
+        if child hasnot enough candies then he go to the last of the line else he go to home
+
+while line is not empty 
+    give m candies to the first child of the line
+    if child hasnot enough candies then he go to the last of the line
+    else he go to home
+
+input 
+    n, m
+    a[n]
+
+empty{false}
+last{-1}
+while not empty:
+    
+
+
+output
+    index of the last child 
