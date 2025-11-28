@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#include <string>
-#include <iostream>
 
 using namespace std;
 
@@ -11,8 +9,18 @@ void Fast_IO(){
     #endif
 }
 
-void printArray(int arr[], int size);
-void solve() ;
+long long func(long long x) {
+   return (2 * x) + 3;
+}
+
+void solve() {
+    long long x;
+    cin >> x;
+
+    long long result =  func(func(func(x))) + 2 * func(x * func(x));
+   
+    cout << result << endl;
+}
 
 int main() {
 
@@ -21,15 +29,3 @@ int main() {
      
     return 0;
 } 
-
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
-
-
-void solve() {
-    
-}
