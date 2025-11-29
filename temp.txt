@@ -1,3 +1,35 @@
 path with n consecutive cells
 each cell can be empty or contains throns or a coin
-in one move you can move one or two cells, 
+in one move you can move one or two cells, provided that the destination cell does not contain thorns
+If you move to the cell with a coin, you pick it up
+collect as many coins as possible.
+find maximum number of coins you can collect
+
+-------------------
+input:
+    t (1 <= t <= 1000) number of test cases
+        for each test case:
+            n (1 <= n <= 50) --the length of the path
+            string of n chars,  '.' empty cell, '@' coin, '*' throns
+output:
+    for each test case 
+        print maximum number of coins you can collect.
+
+-----------------------
+
+initializ t number of test cases:
+
+for i in 1 to t
+    initialize n the length of the path
+    initialize path 
+
+    initialize coins, throns
+    for i in 0 to n-1 move i one step
+        if current cell is coin
+            add one to coins
+            thrones = 0
+        else if current cell is thrones
+            add one to thrones
+        if (thrones > 1)
+            break loop
+    print coins
