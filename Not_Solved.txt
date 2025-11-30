@@ -7,3 +7,7 @@ G. The Enchanted Tower
 H. El-Genena Password
     https://codeforces.com/group/vtfsyP8jkN/contest/594798/problem/H
 
+D. Same Differences
+    https://codeforces.com/problemset/problem/1520/D
+    tutorial:
+        https://codeforces.com/blog/entry/90342
