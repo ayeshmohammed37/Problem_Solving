@@ -11,3 +11,7 @@ D. Same Differences
     https://codeforces.com/problemset/problem/1520/D
     tutorial:
         https://codeforces.com/blog/entry/90342
+
+D. Min Cost String
+    https://codeforces.com/problemset/problem/1511/D
+    

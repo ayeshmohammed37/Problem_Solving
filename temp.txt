@@ -1,29 +1,14 @@
-array a[n]
-count number of pairs of indices (i,j) for {i < j and a[j] - a[i] = j - i}
+string s 
+26 numbers: represent cost of each letter 
+print the minimum cost that can be achieved and the string s after replacing every '?' symbol in the string.
 
-------------------------
-input:
-    t test cases (1 <= t <= 10^4)
-    for each t
-        n (1 <= n <= 2*10^5)
-        a[1], a[2], ..., a[n] (1 <= a[i] <= n)
+cost = sum of absolute difference of every two consecutive letters costs in the string.
 
-output:
-    number of pairs 
+------------------
+input   
+    string s (s <= |s| <= 10^6)
+    26 numbers (0 <= xi <= 10^5)
 
---------------------------
-
-initialize t of test cases
-
-for each test case:
-    initialize n and pairs
-    for j in 0 to n-1:
-        get a[j]
-        for i in 0 to j-1
-            if a[j] -a[i] = j - i
-                add one to pairs
-    print pairs
-    
-    
-
-O(n^)
+output 
+    minimum cost
+    sting s after replacing '?'
