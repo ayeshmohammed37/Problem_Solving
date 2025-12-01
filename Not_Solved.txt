@@ -21,5 +21,9 @@ A. Fibonacciness
 sheet Mansoura || Contest 3
     F. Pizza For Sameh
         https://codeforces.com/group/vtfsyP8jkN/contest/596853/problem/F
-    G. My Last Sorting Problem
+
+    G. My Last Sorting Problem = A. Another Sorting Problem
         https://codeforces.com/group/vtfsyP8jkN/contest/596853/problem/G
+        https://codeforces.com/problemset/problem/1575/A
+        solution:
+            https://www.youtube.com/watch?v=gvb8WgRQ56E
