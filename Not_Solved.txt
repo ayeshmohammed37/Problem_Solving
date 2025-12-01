@@ -15,3 +15,11 @@ D. Same Differences
 D. Min Cost String
     https://codeforces.com/problemset/problem/1511/D
     
+A. Fibonacciness
+    https://codeforces.com/problemset/problem/2060/A
+
+sheet Mansoura || Contest 3
+    F. Pizza For Sameh
+        https://codeforces.com/group/vtfsyP8jkN/contest/596853/problem/F
+    F. Pizza For Sameh
+        https://codeforces.com/group/vtfsyP8jkN/contest/596853/problem/G
