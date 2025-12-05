@@ -1,14 +1,13 @@
-string s 
-26 numbers: represent cost of each letter 
-print the minimum cost that can be achieved and the string s after replacing every '?' symbol in the string.
+n m
+arr[n]
 
-cost = sum of absolute difference of every two consecutive letters costs in the string.
+for i in 1 t m
+    print how many i is appear in the array
 
-------------------
-input   
-    string s (s <= |s| <= 10^6)
-    26 numbers (0 <= xi <= 10^5)
-
-output 
-    minimum cost
-    sting s after replacing '?'
+- get n m 
+- intialize arr[n] and freq[m] = [0];
+- for i in 1 to n
+    - get arr[i]
+    - increase freq[arr[i]] by one
+- for i in 1 to m
+    print freq[i];
