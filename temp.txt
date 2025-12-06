@@ -1,37 +1,15 @@
-IR sensors, each with a range
+find max number of customes at any time
 
-n-IR 
-    range Li and Ri centimeters
-
-K:
-    minimum number of sensors required so the distance can be valid
-
-q 
-    a b
-    how many admissible distances fall within the range a b
+n
+    l r
 
 
-n k q
-for n lines
-    l r for i-th sensor
-for each q
-    a b
 
 
-91 92 93 94 95 96 97
-1  2  1  1        
 
+3
+5 8
+2 4
+3 9
 
-- get n k q
-- intialize freq[max] = {0}
-- for each n
-    - get l and r
-    - add 1 to freq[l] and add -1 to freq[r+1]
-- update freq
-- for each q
-    - get a and b
-    - intialize cnt=0
-    - for i in a to b
-        if freq[i] >= k
-            cnt++
-    print cnt
+2
