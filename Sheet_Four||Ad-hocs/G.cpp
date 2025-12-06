@@ -14,28 +14,36 @@ void Fast_IO(){
 
 void solve() {
    int k, n, q; cin >> n >> k >> q;
-   
-   int freq[200'000 + 5] = {0};
-   for (int i{1}; i <= n; i++) {
+   int mx = 200'000 + 5;
+   int freq[mx] = {0};
+   int ok[mx] = {0};
+   int prefixSum[mx] = {0};
+
+   while (n--) {
       int l, r; cin >> l >> r;
       freq[l]++;
-      freq[r+1] -= 1;
-   }
-
-   for (int i{1}; i <= 200'000; i++) {
-      freq[i] += freq[i-1];
+      freq[r+1]--;
    }
    
-   for (int i{1}; i <= q; i++) {
-      int a, b; cin >> a >> b;
-      int cnt{0};
-      for (int j{a}; j <= b; j++) {
-         if (freq[j] >= k) {
-            cnt++;
-         }
-      }
-      cout << cnt << endl;
+   for (int i{1}; i <= mx; i++) {
+      freq[i] += freq[i-1];
    }
+
+   for (int i{1}; i <= mx; i++) {
+      if (freq[i] >= k) {
+         ok[i] = 1;
+      }
+   }
+
+   for (int i{1}; i <= mx; i++) {
+      prefixSum[i] = ok[i] + prefixSum[i-1];
+   }
+
+   while (q--) {
+      int a , b; cin >> a >> b;
+      cout << prefixSum[b] - prefixSum[a-1] << endl;
+   }
+   
 }
 
 int main() {
