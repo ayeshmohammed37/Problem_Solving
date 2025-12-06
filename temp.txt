@@ -1,33 +1,16 @@
-some numbers and number of queries
+arr[n]
 
-for each query
-    l, r, x 
-    calculate how many times x exists in range [l, r]
-
-8 6
-1 6 5 7 9 9 1 6
-1 8 9
-5 6 9
-6 6 9
-7 8 6
-1 8 1
-2 3 1
-
-2
-2
-1
-1
-2
-0
+print any value that appears at least three times or print -1
 
 
-- get n and q
-- for in in 1 to n
+n
+arr[n]
+
+- get n
+- intialize arr[n] and freq[n]=[0] and ans = -1
+- for i in 1 to n
     - get arr[i]
-- for i in 1 to q
-    - get l r x
-    - cnt = 0
-    - for i in l to r
-        - if arr[i] == x
-            - increase cnt by 1
-    print cnt
+    - freq[arr[i]]++
+    - if freq[arr[i]] >= 3
+        - ans = arr[i]
+- print ans
