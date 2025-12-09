@@ -27,3 +27,8 @@ sheet Mansoura || Contest 3
         https://codeforces.com/problemset/problem/1575/A
         solution:
             https://www.youtube.com/watch?v=gvb8WgRQ56E
+
+Sheet 4
+    I,
+    L:
+        https://codeforces.com/problemset/problem/1862/C
