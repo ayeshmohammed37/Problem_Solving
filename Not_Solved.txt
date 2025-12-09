@@ -32,3 +32,5 @@ Sheet 4
     I,
     L:
         https://codeforces.com/problemset/problem/1862/C
+    N:
+        https://codeforces.com/problemset/problem/961/B
