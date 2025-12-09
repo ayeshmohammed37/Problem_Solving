@@ -13,8 +13,22 @@ void Fast_IO(){
 }
 
 void solve() {
-   ll n = 1e6 + 1;
-   cout << n;
+   ll n, k; cin >> n >> k;
+   ll N = 1e6 + 1;
+   ll arr[N];
+   ll freq[N] = {0};
+
+   ll l,r;
+   for (ll i{1}; i <= n; i++) {
+      int cnt = 0;
+      l = 
+      for (ll j{i}; cnt <= k; j++) {
+         if (freq[arr[i]] == 0) {
+            cnt++;
+         }
+
+      }
+   }
 }
 
 int main() {

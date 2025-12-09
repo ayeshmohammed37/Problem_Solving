@@ -13,8 +13,6 @@ void Fast_IO(){
 }
 
 void solve() {
-   ll n = 1e6 + 1;
-   cout << n;
 }
 
 int main() {

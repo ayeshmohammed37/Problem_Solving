@@ -34,3 +34,7 @@ Sheet 4
         https://codeforces.com/problemset/problem/1862/C
     N:
         https://codeforces.com/problemset/problem/961/B
+    O:
+        https://codeforces.com/problemset/problem/978/C
+    P:
+        https://codeforces.com/problemset/problem/616/D
