@@ -1,0 +1,12 @@
+string s = sting of zeros and ones
+n = s.size()
+
+
+get string of length n
+any two different adjacent elements you can remove them
+return the length of s after removing
+
+110100
+
+1100
+11100001
