@@ -78,3 +78,60 @@ for (int i = 0; i < n; i++) {           //O(n)
         //
     }
 }
+
+---------------------------------------------------------------
+Vector v;
+v.size()
+
+v.push_back(0)
+
+if(!v.empty()) {
+    v.pop_back()
+}
+
+iterator(simillaer to pointers):
+    v.begin(), v.end(), v.rbegin(), v.rend
+
+v.insert(idx, val), v.insert(v.begin(), val)
+
+v.erase(v.begin()), v.erase(v.begin(), v.begin() + 3)
+
+v{1 2 3}
+v.resize(4)     // v {1 2 3 0}
+v.resize(6,-1)  // v {1 2 3 0 -1 -1}
+v.resize(2)     // v {1 2}
+v.assign(5, 5) // v {5 5 5 5 5}
+v.assign(2, 3) // v {3 3 5 5 5}
+
+v.clear() // v {}
+
+------------------------------------------------------------------------------
+stack<int> st;
+st.push(3);
+st.push(2);
+st.pop()
+st.empty()
+st.size()
+
+------------------------------------------------------------------------------
+queue<int> q;
+q.push(1)
+q.push(2)
+q.push(3)
+// q {1 2 3}
+q.pop()
+//1 {2 3}
+q.front() // 2
+q.size() // 2
+q.empty()
+
+------------------------------------------------------------------------------
+deque dq;
+dq.push_back();
+dq.push_front();
+dq.empty()
+dq.size()
+dq.clear() //O(n) 
+
+------------------------------------------------------------------------------
+priority_queue<int> pq;

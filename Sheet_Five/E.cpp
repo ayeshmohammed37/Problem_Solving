@@ -2,7 +2,6 @@
 using namespace std;
 
 #define ll long long
-#define uli unsigned long int
 #define ull unsigned long long
 #define uint unsigned int
 
@@ -14,9 +13,24 @@ void Fast_IO(){
 }
 
 void solve() {
-   cout << ('U' - 'A' + 1);   
-}
+   string s; cin >> s;
 
+   stack<char> st;
+   int regularBracketlength = 0;
+   for (size_t i{0}; i < s.size(); i++) {
+      if (s[i] == '(') {
+         st.push(s[i]);
+      }
+      else {
+         if (!st.empty()) {
+            st.pop();
+            regularBracketlength += 2;
+         }
+      }
+   }
+
+   cout << regularBracketlength << "\n";
+}
 
 int main() {
 

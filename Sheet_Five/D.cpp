@@ -14,7 +14,30 @@ void Fast_IO(){
 }
 
 void solve() {
-   cout << ('U' - 'A' + 1);   
+   string s; cin >> s;
+
+   stack<char> st;
+   for (int i{0}; i < s.size(); i++) {
+      if(s[i] == '(') {
+         st.push(s[i]);
+      }
+      else {
+         if (!st.empty()) {
+            st.pop();
+         }
+         else {
+            cout << "No\n";
+            return;
+         }
+      }
+   }
+
+   if (st.size() == 0) {
+      cout << "Yes\n";
+   }
+   else {
+      cout << "No\n";
+   }
 }
 
 

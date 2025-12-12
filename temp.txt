@@ -1,1 +1,10 @@
-arr[n]
+push_back x : where (1≤x≤109)
+ add x at the end of the deque.
+push_front x : where (1≤x≤109)
+ add x at the begin of the deque.
+pop_front : remove the first element in the deque.
+pop_back : remove the last element in the deque.
+front: print the first element in the deque.
+back: print the last element in the deque.
+print x : where (1≤x≤|dq|)
+ print the element in index x of the deque.

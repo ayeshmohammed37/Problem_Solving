@@ -14,7 +14,24 @@ void Fast_IO(){
 }
 
 void solve() {
-   cout << ('U' - 'A' + 1);   
+   stack<char> openBracket;
+   stack<char> closeBracket;
+
+   string s; cin >> s;
+   for (const char& ch : s) {
+      if (ch == '(') {
+         openBracket.push(ch);
+      }
+      else {
+         closeBracket.push(ch);
+      }
+   }
+   if (openBracket.size() == closeBracket.size()) {
+      cout << "Yes";
+   }
+   else {
+      cout << "No";
+   }
 }
 
 

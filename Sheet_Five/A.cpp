@@ -14,7 +14,17 @@ void Fast_IO(){
 }
 
 void solve() {
-   cout << ('U' - 'A' + 1);   
+   int n; cin >> n;
+   
+   vector<pair<int, int>> points(n);
+   for (uli i{0}; i < points.size(); i++) {
+      cin >> points[i].second >> points[i].first;
+   }
+   sort(points.rbegin(), points.rend());
+
+   for (uli i{0}; i < points.size(); i++) {
+      cout << points[i].second << " " << points[i].first << endl;
+   }
 }
 
 
