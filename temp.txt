@@ -1,12 +1,6 @@
-string s = sting of zeros and ones
-n = s.size()
+permutation p
+   array of size n
+   each number is between 1 to n
+   each number occurs exactly once
 
-
-get string of length n
-any two different adjacent elements you can remove them
-return the length of s after removing
-
-110100
-
-1100
-11100001
+p [3,1,2]

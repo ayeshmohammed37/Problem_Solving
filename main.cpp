@@ -14,7 +14,7 @@ void Fast_IO(){
 }
 
 void solve() {
-   cout << ('U' - 'A' + 1);   
+    
 }
 
 
