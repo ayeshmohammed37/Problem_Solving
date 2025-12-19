@@ -17,12 +17,42 @@ int main() {
 
    int t; cin >> t;
    while (t--) {
-      int l, a, b; cin >> l >> a >> b;
-      
-      int spins[l]; 
-      for (int i = 0; i < l; i++) {
-         spins[i] = (a + b*i) % l;
+      int n; cin >> n;
+      string s = "";
+      for (int i = 0; i < n; i++) {
+         string str; cin >> str;
+         if (s.empty()) {
+            s = str;
+         }
+         else if (s[0] < str[0]) {
+            s = s + str;
+         }
+         else if (s[0] > str[0]) {
+            s = str + s;
+         }
+         else {
+            int l = min(s.length(), str.length());
+            bool flag = false;
+            for (int j = 0; j < l; j++) {
+               if (str[i] == s[i]) {
+                  continue;
+               }
+               else if (str[j] < s[i]) {
+                  flag = true;
+                  break;
+               }
+               else {
+                  break;
+               }
+            }
+            if (flag) {
+               s = str + s;
+            }
+            else {
+               s = s + str;
+            }
+         }
       }
-      cout << *max_element(spins, spins + l) << endl;
+      cout << s << endl;
    }
 }
