@@ -15,14 +15,20 @@ void Fast_IO(){
 int main() {
    Fast_IO();
 
-   int t; cin >> t;
-   while (t--) {
-      int l, a, b; cin >> l >> a >> b;
-      
-      int spins[l]; 
-      for (int i = 0; i < l; i++) {
-         spins[i] = (a + b*i) % l;
+   int n; cin >> n;
+   vector<ll> v(n);
+   for (int i = 0; i < n; i++) cin >> v[i];
+   sort(v.begin(), v.end(), greater<ll>());
+   
+   ll cnt = 0;
+   for (ll i = 0, sum = 0; i < n; i++) {
+      sum += v[i];
+      if (sum >= 0) {
+         cnt++;
       }
-      cout << *max_element(spins, spins + l) << endl;
+      else {
+         break;
+      }
    }
+   cout << cnt << endl;
 }

@@ -1,6 +1,0 @@
-permutation p
-   array of size n
-   each number is between 1 to n
-   each number occurs exactly once
-
-p [3,1,2]

@@ -13,19 +13,25 @@ void Fast_IO(){
    #endif
 }
 
-void solve() {
-    
-}
 
 
 int main() {
-
    Fast_IO();
-   int t{1};
-   // cin >> t;
-   while (t--) {
-      solve();
+
+   map<int, int> m;
+   m[1] = 10;
+   m[2] = 11;
+   m[3] = 9;
+   m[1]++;
+
+   // for (auto item : m) {
+   //    cout << item.first << " " << item.second << endl;
+   // }
+   // m.erase(1);
+   m.erase(m.find(2));
+
+   for (auto i = m.begin(); i != m.end(); i++) {
+      cout << i->first << " " << i->second << endl;
    }
-   
-   return 0;
+
 }
