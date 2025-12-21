@@ -14,22 +14,21 @@ void Fast_IO(){
 int main() {
    Fast_IO();
 
-   map<ll, ll> m;
+   set<int> save;
+   set<int> reject;
 
    int n; cin >> n;
-   ll val;
-   int cnt = 0;
+   int x;
    while (n--) {
-      cin >> val;
-      if (m[val] == 0) {
-         m[val]++;
-         cnt++;
+      cin >> x;
+      if (!save.count(x) && !reject.count(x)) {
+         save.insert(x);
       }
-      else if (m[val] == 1){
-         cnt--;
-         m[val]++;
+      else {
+         save.erase(x);
+         reject.insert(x);
       }
    }
-   cout << cnt;
+   cout << save.size();
 
 }

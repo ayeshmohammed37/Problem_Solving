@@ -14,22 +14,6 @@ void Fast_IO(){
 int main() {
    Fast_IO();
 
-   map<ll, ll> m;
-
-   int n; cin >> n;
-   ll val;
-   int cnt = 0;
-   while (n--) {
-      cin >> val;
-      if (m[val] == 0) {
-         m[val]++;
-         cnt++;
-      }
-      else if (m[val] == 1){
-         cnt--;
-         m[val]++;
-      }
-   }
-   cout << cnt;
+   
 
 }
